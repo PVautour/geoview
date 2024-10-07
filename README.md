@@ -65,7 +65,7 @@ $ cd geoview
 
 ### Install rush globally
 
-```
+```powershell
 $ npm install -g @microsoft/rush
 ```
 

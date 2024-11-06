@@ -12,21 +12,25 @@
     "listOfGeoviewLayerConfig": [
       {
         "geoviewLayerId": "napl",
-        "geoviewLayerName": "NAPL",
-        "metadataAccessPath": "https://datacube.services.geo.ca/web/napl-ontario-ring-of-fire.xml",
+        "geoviewLayerName": { "en": "NAPL" },
+        "metadataAccessPath": { "en": "https://datacube.services.geo.ca/web/napl-ontario-ring-of-fire.xml" },
         "geoviewLayerType": "ogcWms",
         "listOfLayerEntryConfig": [
           {
             "layerId": "ontario-ring-of-fire",
-            "layerName": "Ontario ring of fire"
+            "layerName": { "en": "Ontario ring of fire" }
           }
         ]
       },
       {
         "geoviewLayerId": "historical-flood",
         "serviceDateFormat": "yyyy/mm/ddThh:mm:ssz",
-        "geoviewLayerName": "Historical Flood Events (HFE)",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/historical_flood_event_en/MapServer",
+        "geoviewLayerName": {
+          "en": "Historical Flood Events (HFE)"
+        },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/historical_flood_event_en/MapServer"
+        },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
@@ -36,20 +40,24 @@
       },
       {
         "geoviewLayerId": "wmsLYR1-spatiotemporel",
-        "geoviewLayerName": "Spatiotemporel",
-        "metadataAccessPath": "https://geo.weather.gc.ca/geomet",
+        "geoviewLayerName": { "en": "Spatiotemporel" },
+        "metadataAccessPath": { "en": "https://geo.weather.gc.ca/geomet" },
         "geoviewLayerType": "ogcWms",
         "listOfLayerEntryConfig": [
           {
             "layerId": "RADAR_1KM_RSNO",
-            "layerName": "Test Spatiotemporel"
+            "layerName": { "en": "Test Spatiotemporel" }
           }
         ]
       },
       {
         "geoviewLayerId": "MSI",
-        "geoviewLayerName": "MSI",
-        "metadataAccessPath": "https://datacube.services.geo.ca/ows/msi",
+        "geoviewLayerName": {
+          "en": "MSI"
+        },
+        "metadataAccessPath": {
+          "en": "https://datacube.services.geo.ca/ows/msi"
+        },
         "geoviewLayerType": "ogcWms",
         "listOfLayerEntryConfig": [
           {

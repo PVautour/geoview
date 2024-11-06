@@ -12,8 +12,14 @@
       'listOfGeoviewLayerConfig': [
         {
           'geoviewLayerId': 'NHN',
-          'geoviewLayerName': 'Hydro Network',
-          'metadataAccessPath': 'https://maps.geogratis.gc.ca/wms/hydro_network_en',
+          'geoviewLayerName': {
+            'en': 'Hydro Network',
+            'fr': 'Hydro Network'
+          },
+          'metadataAccessPath': {
+            'en': 'https://maps.geogratis.gc.ca/wms/hydro_network_en',
+            'fr': 'https://maps.geogratis.gc.ca/wms/hydro_network_en'
+          },
           'geoviewLayerType': 'ogcWms',
           'listOfLayerEntryConfig': [
             {
@@ -21,7 +27,10 @@
               'initialSettings': {
                 'states': {'visible' : false}
               },
-              'layerName': 'Hydro Network'
+              'layerName': {
+                  'en': 'Hydro Network',
+                  'fr': 'Hydro Network'
+              }
             }
           ]
         }
@@ -72,8 +81,11 @@
       const addResult = cgpv.api.maps['LYR5'].layer.addGeoviewLayer(
         {
           geoviewLayerId: 'GeoMetGeoJsonProcess',
-          metadataAccessPath: './datasets/geojson/processes-metadata.json' ,
-          geoviewLayerName: 'GeoMet-OGC-API',
+          metadataAccessPath: { 'en': './datasets/geojson/processes-metadata.json' },
+          geoviewLayerName: {
+            en: 'GeoMet-OGC-API',
+            fr: 'GeoMet-OGC-API',
+          },
           geoviewLayerType: 'GeoJSON',
           'listOfLayerEntryConfig': [
             {
@@ -118,8 +130,10 @@
       const addResult = cgpv.api.maps['LYR5'].layer.addGeoviewLayer(
         {
           geoviewLayerId: 'HydroGeoJsonProcess',
-          metadataAccessPath: './datasets/geojson/hydro-metadata.json',
-          geoviewLayerName: 'Downstream Analysis',
+          metadataAccessPath: { 'en': './datasets/geojson/hydro-metadata.json' },
+          geoviewLayerName: {
+            en: 'Downstream Analysis'
+          },
           geoviewLayerType: 'GeoJSON',
           'listOfLayerEntryConfig': [
             {

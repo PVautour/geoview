@@ -16,8 +16,12 @@
       },
       {
         "geoviewLayerId": "airborne_radioactivity",
-        "geoviewLayerName": "Airborne Radioactivity",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/HC/airborne_radioactivity_en/MapServer",
+        "geoviewLayerName": {
+          "en": "Airborne Radioactivity"
+        },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/HC/airborne_radioactivity_en/MapServer"
+        },
         "geoviewLayerType": "esriDynamic",
         "listOfLayerEntryConfig": [
           {
@@ -27,8 +31,8 @@
       },
       {
         "geoviewLayerId": "errorId",
-        "geoviewLayerName": "uniqerrorLayerueValue",
-        "metadataAccessPath": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer1/",
+        "geoviewLayerName": { "en": "uniqerrorLayerueValue" },
+        "metadataAccessPath": { "en": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer1/" },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
@@ -38,8 +42,8 @@
       },
       {
         "geoviewLayerId": "uniqueValueId",
-        "geoviewLayerName": "uniqueValue",
-        "metadataAccessPath": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer/",
+        "geoviewLayerName": { "en": "uniqueValue" },
+        "metadataAccessPath": { "en": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer/" },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
@@ -54,8 +58,12 @@
       },
       {
         "geoviewLayerId": "esriFeatureLYR5",
-        "geoviewLayerName": "Top Projects",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/",
+        "geoviewLayerName": {
+          "en": "Top Projects"
+        },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/"
+        },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
@@ -65,8 +73,12 @@
       },
       {
         "geoviewLayerId": "nonmetalmines",
-        "geoviewLayerName": "Non metal mines",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/",
+        "geoviewLayerName": {
+          "en": "Non metal mines"
+        },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/900A_and_top_100_en/MapServer/"
+        },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
@@ -76,42 +88,42 @@
       },
       {
         "geoviewLayerId": "geojsonLYR1",
-        "geoviewLayerName": "GeoJSON Sample",
-        "metadataAccessPath": "./datasets/geojson/metadata.json",
+        "geoviewLayerName": { "en": "GeoJSON Sample" },
+        "metadataAccessPath": { "en": "./datasets/geojson/metadata.json" },
         "geoviewLayerType": "GeoJSON",
         "listOfLayerEntryConfig": [
           {
             "layerId": "polygons.json",
-            "layerName": "Polygons"
+            "layerName": { "en": "Polygons" }
           },
           {
             "layerId": "lines.json",
-            "layerName": "Lines"
+            "layerName": { "en": "Lines" }
           },
           {
             "entryType": "group",
             "layerId": "point-feature-group",
-            "layerName": "Points & Icons",
+            "layerName": { "en": "Points & Icons" },
             "listOfLayerEntryConfig": [
               {
                 "layerId": "icon_points.json",
-                "layerName": "Icons"
+                "layerName": { "en": "Icons" }
               },
               {
                 "layerId": "points.json",
-                "layerName": "Points"
+                "layerName": { "en": "Points" }
               },
               {
                 "layerId": "points_1.json",
-                "layerName": "Points 1"
+                "layerName": { "en": "Points 1" }
               },
               {
                 "layerId": "points_2.json",
-                "layerName": "Points 2"
+                "layerName": { "en": "Points 2" }
               },
               {
                 "layerId": "points_3.json",
-                "layerName": "Points 3"
+                "layerName": { "en": "Points 3" }
               }
             ]
           }

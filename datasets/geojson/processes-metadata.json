@@ -3,9 +3,12 @@
   "listOfLayerEntryConfig": [
     {
       "layerId": "execution",
-      "layerName": "Raster Drill process",
+      "layerName": { "en": "Raster Drill process", "fr": "Raster Drill process" },
       "source": {
-        "dataAccessPath": "https://api.weather.gc.ca/processes/raster-drill/execution",
+        "dataAccessPath": {
+          "en": "https://api.weather.gc.ca/processes/raster-drill/execution",
+          "fr": "https://api.weather.gc.ca/processes/raster-drill/execution"
+        },
         "postSettings": {
           "header": {
             "accept": "application/json",

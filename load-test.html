@@ -145,10 +145,16 @@
           for (j = 0; j < parseInt(document.getElementById('layerCount').value); j++) {
             cgpv.api.maps['mapWM'].layer.addGeoviewLayer({
               geoviewLayerId: new Date().getTime().toString(),
-              geoviewLayerName: 'test',
+              geoviewLayerName: {
+                en: 'test',
+                fr: 'test',
+              },
               geoviewLayerType: type,
               listOfLayerEntryConfig,
-              metadaAccessPath: document.getElementById('url').value,
+              metadaAccessPath: {
+                en: document.getElementById('url').value,
+                fr: document.getElementById('url').value,
+              },
             });
           }
 

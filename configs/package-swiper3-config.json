@@ -12,8 +12,12 @@
     "listOfGeoviewLayerConfig": [
       {
         "geoviewLayerId": "swipe1",
-        "geoviewLayerName": "MSI",
-        "metadataAccessPath": "https://datacube.services.geo.ca/ows/msi",
+        "geoviewLayerName": {
+          "en": "MSI"
+        },
+        "metadataAccessPath": {
+          "en": "https://datacube.services.geo.ca/ows/msi"
+        },
         "geoviewLayerType": "ogcWms",
         "listOfLayerEntryConfig": [
           {
@@ -21,7 +25,10 @@
             "source": {
               "featureInfo": {
                 "queryable": true,
-                "nameField": "band-0-pixel-value",
+                "nameField": {
+                  "en": "band-0-pixel-value",
+                  "fr": "band-0-pixel-value"
+                },
                 "outfields": [
                   {
                     "name": "band-0-pixel-value",
@@ -37,8 +44,12 @@
       },
       {
         "geoviewLayerId": "swipe4",
-        "geoviewLayerName": "GeoJSON Sample",
-        "metadataAccessPath": "./datasets/geojson/metadata.json",
+        "geoviewLayerName": {
+          "en": "GeoJSON Sample"
+        },
+        "metadataAccessPath": {
+          "en": "./datasets/geojson/metadata.json"
+        },
         "geoviewLayerType": "GeoJSON",
         "listOfLayerEntryConfig": [
           {
@@ -48,8 +59,12 @@
       },
       {
         "geoviewLayerId": "swipe5",
-        "geoviewLayerName": "Airport data",
-        "metadataAccessPath": "https://geo.weather.gc.ca/geomet?REQUEST=GetCapabilities&VERSION=2.0.0&SERVICE=WFS",
+        "geoviewLayerName": {
+          "en": "Airport data"
+        },
+        "metadataAccessPath": {
+          "en": "https://geo.weather.gc.ca/geomet?REQUEST=GetCapabilities&VERSION=2.0.0&SERVICE=WFS"
+        },
         "geoviewLayerType": "ogcWfs",
         "listOfLayerEntryConfig": [
           {
@@ -59,8 +74,12 @@
       },
       {
         "geoviewLayerId": "swipe6",
-        "geoviewLayerName": "Large Lakes",
-        "metadataAccessPath": "https://b6ryuvakk5.execute-api.us-east-1.amazonaws.com/dev",
+        "geoviewLayerName": {
+          "en": "Large Lakes"
+        },
+        "metadataAccessPath": {
+          "en": "https://b6ryuvakk5.execute-api.us-east-1.amazonaws.com/dev"
+        },
         "geoviewLayerType": "ogcFeature",
         "listOfLayerEntryConfig": [
           {
@@ -74,7 +93,9 @@
       },
       {
         "geoviewLayerId": "swipe0",
-        "geoviewLayerName": "statmen toner",
+        "geoviewLayerName": {
+          "en": "statmen toner"
+        },
         "geoviewLayerType": "xyzTiles",
         "listOfLayerEntryConfig": [
           {
@@ -84,7 +105,9 @@
               "maxZoom": 8
             },
             "source": {
-              "dataAccessPath": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+              "dataAccessPath": {
+                "en": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+              }
             }
           }
         ]

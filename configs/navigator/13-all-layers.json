@@ -12,31 +12,31 @@
     "listOfGeoviewLayerConfig": [
       {
         "geoviewLayerId": "geojsonLYR1",
-        "geoviewLayerName": "GeoJSON Sample",
-        "metadataAccessPath": "./datasets/geojson/metadata.json",
+        "geoviewLayerName": { "en": "GeoJSON Sample" },
+        "metadataAccessPath": { "en": "./datasets/geojson/metadata.json" },
         "geoviewLayerType": "GeoJSON",
         "listOfLayerEntryConfig": [
           {
             "layerId": "polygons.json",
-            "layerName": "Polygons"
+            "layerName": { "en": "Polygons" }
           },
           {
             "layerId": "lines.json",
-            "layerName": "Lines"
+            "layerName": { "en": "Lines" }
           },
           {
             "entryType": "group",
             "layerId": "point-feature-group",
-            "layerName": "point-feature-group",
+            "layerName": { "en": "point-feature-group" },
             "listOfLayerEntryConfig": [
               {
                 "layerId": "icon_points.json",
-                "layerName": "Icons",
+                "layerName": { "en": "Icons" },
                 "initialSettings": { "states": { "visible": false } }
               },
               {
                 "layerId": "points.json",
-                "layerName": "Points"
+                "layerName": { "en": "Points" }
               }
             ]
           }
@@ -44,14 +44,14 @@
       },
       {
         "geoviewLayerId": "csvLYR1",
-        "geoviewLayerName": "NPRI",
+        "geoviewLayerName": { "en": "NPRI" },
         "geoviewLayerType": "CSV",
         "listOfLayerEntryConfig": [
           {
             "layerId": "NPRI-INRP_WaterEau_MediaGroupMilieu_2022",
-            "layerName": "NPRI Water Media Group 2022",
+            "layerName": { "en": "NPRI Water Media Group 2022" },
             "source": {
-              "dataAccessPath": "./datasets/csv-files/NPRI-INRP_WaterEau_MediaGroupMilieu_2022.csv",
+              "dataAccessPath": { "en": "./datasets/csv-files/NPRI-INRP_WaterEau_MediaGroupMilieu_2022.csv" },
               "separator": ","
             }
           }
@@ -59,8 +59,10 @@
       },
       {
         "geoviewLayerId": "esriFeatureLYR1",
-        "geoviewLayerName": "Temporal_Test_Bed_en",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/Temporal_Test_Bed_en/MapServer/",
+        "geoviewLayerName": { "en": "Temporal_Test_Bed_en" },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/Temporal_Test_Bed_en/MapServer/"
+        },
         "geoviewLayerType": "esriDynamic",
         "listOfLayerEntryConfig": [
           {
@@ -70,9 +72,11 @@
       },
       {
         "geoviewLayerId": "historical-flood",
-        "geoviewLayerName": "Historical Flood Events (HFE)",
+        "geoviewLayerName": { "en": "Historical Flood Events (HFE)" },
         "externalDateFormat": "mm/dd/yyyy hh:mm:ss-05:00",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/historical_flood_event_en/MapServer",
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/historical_flood_event_en/MapServer"
+        },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
@@ -82,13 +86,17 @@
       },
       {
         "geoviewLayerId": "ESRIImageLYR2",
-        "geoviewLayerName": "Max Temp",
+        "geoviewLayerName": {
+          "en": "Max Temp"
+        },
         "geoviewLayerType": "esriImage",
-        "metadataAccessPath": "https://www5.agr.gc.ca/atlas/rest/services/imageservices/annual_crop_inventory_2022/ImageServer",
+        "metadataAccessPath": {
+          "en": "https://www5.agr.gc.ca/atlas/rest/services/imageservices/annual_crop_inventory_2022/ImageServer"
+        },
         "listOfLayerEntryConfig": [
           {
             "layerId": "annual_crop_inventory_2022",
-            "layerName": "Crop Inventory 2022"
+            "layerName": { "en": "Crop Inventory 2022" }
           }
         ]
       },
@@ -98,26 +106,35 @@
       },
       {
         "geoviewLayerId": "wfsLYR2",
-        "geoviewLayerName": "Current Conditions",
-        "metadataAccessPath": "https://geo.weather.gc.ca/geomet?REQUEST=GetCapabilities&VERSION=2.0.0&SERVICE=WFS",
+        "geoviewLayerName": {
+          "en": "Current Conditions"
+        },
+        "metadataAccessPath": {
+          "en": "https://geo.weather.gc.ca/geomet?REQUEST=GetCapabilities&VERSION=2.0.0&SERVICE=WFS"
+        },
         "geoviewLayerType": "ogcWfs",
         "listOfLayerEntryConfig": [
           {
             "layerId": "ec-msc:CURRENT_CONDITIONS",
-            "layerName": "Current Conditions"
+            "layerName": { "en": "Current Conditions" }
           }
         ]
       },
       {
         "geoviewLayerId": "staticLYR10",
-        "geoviewLayerName": "Static Image",
+        "geoviewLayerName": {
+          "en": "Static Image"
+        },
         "geoviewLayerType": "imageStatic",
         "listOfLayerEntryConfig": [
           {
             "layerId": "thumbnail",
-            "layerName": "Static Image",
+            "layerName": { "en": "Static Image" },
             "source": {
-              "dataAccessPath": "https://datacube-prod-data-public.s3.ca-central-1.amazonaws.com/store/imagery/aerial/napl/napl-ring-of-fire/napl-ring-of-fire-1954-08-07-60k-thumbnail.png",
+              "dataAccessPath": {
+                "en": "https://datacube-prod-data-public.s3.ca-central-1.amazonaws.com/store/imagery/aerial/napl/napl-ring-of-fire/napl-ring-of-fire-1954-08-07-60k-thumbnail.png",
+                "fr": "https://datacube-prod-data-public.s3.ca-central-1.amazonaws.com/store/imagery/aerial/napl/napl-ring-of-fire/napl-ring-of-fire-1954-08-07-60k-thumbnail.png"
+              },
               "extent": [-87.77486341686723, 51.62285357468582, -84.57727128084842, 53.833354975551075],
               "projection": 4326
             }
@@ -126,8 +143,12 @@
       },
       {
         "geoviewLayerId": "ogcFeatureLYR1",
-        "geoviewLayerName": "Large Lakes",
-        "metadataAccessPath": "https://b6ryuvakk5.execute-api.us-east-1.amazonaws.com/dev",
+        "geoviewLayerName": {
+          "en": "Large Lakes"
+        },
+        "metadataAccessPath": {
+          "en": "https://b6ryuvakk5.execute-api.us-east-1.amazonaws.com/dev"
+        },
         "geoviewLayerType": "ogcFeature",
         "listOfLayerEntryConfig": [
           {
@@ -137,13 +158,13 @@
       },
       {
         "geoviewLayerId": "wmsLYR1-msi",
-        "geoviewLayerName": "MSI",
-        "metadataAccessPath": "https://datacube.services.geo.ca/ows/msi",
+        "geoviewLayerName": { "en": "MSI" },
+        "metadataAccessPath": { "en": "https://datacube.services.geo.ca/ows/msi" },
         "geoviewLayerType": "ogcWms",
         "listOfLayerEntryConfig": [
           {
             "layerId": "msi-94-or-more",
-            "layerName": "Permanent Snow",
+            "layerName": { "en": "Permanent Snow" },
             "source": {
               "style": "msi-binary",
               "featureInfo": {
@@ -164,45 +185,59 @@
       },
       {
         "geoviewLayerId": "GeoPackageLYR1",
-        "geoviewLayerName": "Natural Earth",
+        "geoviewLayerName": {
+          "en": "Natural Earth"
+        },
         "geoviewLayerType": "GeoPackage",
         "listOfLayerEntryConfig": [
           {
             "layerId": "Natural_Earth_QGIS_layers_and_styles.gpkg",
-            "layerName": "Natural Earth",
+            "layerName": { "en": "Natural Earth" },
             "source": {
-              "dataAccessPath": "./datasets/geopackages"
+              "dataAccessPath": {
+                "en": "./datasets/geopackages"
+              }
             }
           }
         ]
       },
       {
         "geoviewLayerId": "xyzTilesLYR1",
-        "geoviewLayerName": "World_Topo_Map",
+        "geoviewLayerName": {
+          "en": "World_Topo_Map"
+        },
         "geoviewLayerType": "xyzTiles",
         "listOfLayerEntryConfig": [
           {
             "layerId": "topo",
-            "layerName": "World Topo Map",
+            "layerName": { "en": "World Topo Map" },
             "initialSettings": { "minZoom": 3, "maxZoom": 8 },
             "source": {
-              "dataAccessPath": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+              "dataAccessPath": {
+                "en": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+              }
             }
           }
         ]
       },
       {
         "geoviewLayerId": "vectorTilesLYR1",
-        "geoviewLayerName": "new basemap",
+        "geoviewLayerName": {
+          "en": "new basemap"
+        },
         "geoviewLayerType": "vectorTiles",
-        "metadataAccessPath": "https://tiles.arcgis.com/tiles/HsjBaDykC1mjhXz9/arcgis/rest/services/CBMT_CBCT_3978_V_OSM/VectorTileServer/",
+        "metadataAccessPath": {
+          "en": "https://tiles.arcgis.com/tiles/HsjBaDykC1mjhXz9/arcgis/rest/services/CBMT_CBCT_3978_V_OSM/VectorTileServer/"
+        },
         "listOfLayerEntryConfig": [
           {
             "layerId": "toner",
-            "layerName": "Tile basemap",
+            "layerName": { "en": "Tile basemap" },
             "initialSettings": { "minZoom": 3, "maxZoom": 18 },
             "source": {
-              "dataAccessPath": "https://tiles.arcgis.com/tiles/HsjBaDykC1mjhXz9/arcgis/rest/services/CBMT_CBCT_3978_V_OSM/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+              "dataAccessPath": {
+                "en": "https://tiles.arcgis.com/tiles/HsjBaDykC1mjhXz9/arcgis/rest/services/CBMT_CBCT_3978_V_OSM/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+              }
             }
           }
         ]

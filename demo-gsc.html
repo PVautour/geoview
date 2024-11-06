@@ -13,14 +13,18 @@
           'listOfGeoviewLayerConfig': [
             {
               'geoviewLayerId': 'geoJsonSample',
-              'geoviewLayerName': 'JSON Layer',
+              'geoviewLayerName': {
+                'en': 'JSON Layer'
+              },
               'geoviewLayerType': 'GeoJSON',
               'listOfLayerEntryConfig': [
                 {
                   'layerId': '46E.JSON',
-                  'layerName': '46E',
+                  'layerName': { 'en': '46E' },
                   'source': {
-                    'dataAccessPath': './datasets/geojson/'
+                    'dataAccessPath': {
+                      'en': './datasets/geojson/'
+                    }
                   }
                 }
               ]

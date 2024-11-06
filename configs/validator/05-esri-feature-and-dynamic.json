@@ -13,14 +13,23 @@
     "listOfGeoviewLayerConfig": [
       {
         "geoviewLayerId": "LYR1",
-        "geoviewLayerName": "Temporal Test Bed",
-        "metadataAccessPath": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/Temporal_Test_Bed_en/MapServer/",
+        "geoviewLayerName": {
+          "en": "Temporal Test Bed",
+          "fr": "Banc d\\'essai temporel"
+        },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/Temporal_Test_Bed_en/MapServer/",
+          "fr": "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/Temporal_Test_Bed_fr/MapServer/"
+        },
         "geoviewLayerType": "esriFeature",
         "listOfLayerEntryConfig": [
           {
             "layerId": "0",
             "geometryType": "point",
-            "layerName": "stations-Temporal",
+            "layerName": {
+              "en": "stations-Temporal",
+              "fr": "stations-Temporal"
+            },
             "initialSettings": {
               "controls": {
                 "query": false
@@ -71,13 +80,22 @@
       },
       {
         "geoviewLayerId": "LYR2",
-        "geoviewLayerName": "Metadata Group",
-        "metadataAccessPath": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer/",
+        "geoviewLayerName": {
+          "en": "Metadata Group",
+          "fr": "Groupe défini dans les métadonnées"
+        },
+        "metadataAccessPath": {
+          "en": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer/",
+          "fr": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CESI/MapServer/"
+        },
         "geoviewLayerType": "esriDynamic",
         "listOfLayerEntryConfig": [
           {
             "layerId": "0",
-            "layerName": "Group 0"
+            "layerName": {
+              "en": "Group 0",
+              "fr": "Groupe 0"
+            }
           },
           {
             "layerId": "4"

@@ -12,31 +12,31 @@
           'listOfGeoviewLayerConfig': [
             {
               'geoviewLayerId': 'geojsonLYR1',
-              'geoviewLayerName': 'GeoJSON Sample',
-              'metadataAccessPath': './datasets/geojson/metadata.json',
+              'geoviewLayerName': { 'en': 'GeoJSON Sample' },
+              'metadataAccessPath': { 'en': './datasets/geojson/metadata.json' },
               'geoviewLayerType': 'GeoJSON',
               'listOfLayerEntryConfig': [
                 {
                   'layerId': 'polygons.json',
-                  'layerName': 'Polygons'
+                  'layerName': { 'en': 'Polygons' }
                 },
                 {
                   'layerId': 'lines.json',
-                  'layerName': 'Lines'
+                  'layerName': { 'en': 'Lines' }
                 },
                 {
                   'entryType': 'group',
                   'layerId': 'point-feature-group',
-                  'layerName': 'point-feature-group',
+                  'layerName': { 'en': 'point-feature-group' },
                   'listOfLayerEntryConfig': [
                     {
                       'layerId': 'icon_points.json',
-                      'layerName': 'Icons',
+                      'layerName': { 'en': 'Icons' },
                       'initialSettings': { 'states': {'visible' : false} }
                     },
                     {
                       'layerId': 'points.json',
-                      'layerName': 'Points'
+                      'layerName': { 'en': 'Points' }
                     }
                   ]
                 }
@@ -89,14 +89,20 @@
       const addResult = cgpv.api.maps['LYR1'].layer.addGeoviewLayer(
         {
           geoviewLayerId: 'geoJsonSample',
-          geoviewLayerName: 'Historical Flood',
+          geoviewLayerName: {
+            en: 'Historical Flood',
+            fr: 'Inondation Historique',
+          },
           geoviewLayerType: 'GeoJSON',
           listOfLayerEntryConfig: [
             {
               layerId: 'historical_flood_0.geojson',
-              layerName: 'Map',
+              layerName: { en: 'Map', fr: 'Carte' },
               source: {
-                dataAccessPath: './datasets/geojson/',
+                dataAccessPath: {
+                  en: './datasets/geojson/',
+                  fr: './datasets/geojson/',
+                },
                 featureInfo: {
                   queryable: true,
                   nameField: 'comment_en',

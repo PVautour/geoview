@@ -4,7 +4,7 @@
   "listOfLayerEntryConfig": [
     {
       "layerId": "projects.json",
-      "layerName": "Projects",
+      "layerName": { "en": "Projects" },
       "source": {
         "featureInfo": {
           "queryable": true,
